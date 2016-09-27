@@ -1,0 +1,14 @@
+has_filter( string $tag, callable|bool $function_to_check = false )
+add_filter( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )
+apply_filters( string $tag, mixed $value )
+current_filter()
+merge_filters();
+remove_filters();
+remove_all_filters( string $tag, int|bool $priority = false )
+do_action( string $tag,  $arg = '' )
+did_action( string $tag )
+has_action( string $tag, callable|bool $function_to_check = false )
+add_action( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )
+remove_action( string $tag, callable $function_to_remove, int $priority = 10 )
+remove_all_actions( string $tag, int|bool $priority = false )
+do_action_ref_array( string $tag, array $args )

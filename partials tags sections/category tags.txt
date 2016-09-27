@@ -1,0 +1,6 @@
+the_category( string $separator = '', string $parents = '', int $post_id = false )
+single_cat_title( string $prefix = '', bool $display = true )
+the_category_rss( string $type = null )
+wp_list_categories( string|array $args = '' )
+category_description( int $category )
+wp_dropdown_categories( string|array $args = '' )

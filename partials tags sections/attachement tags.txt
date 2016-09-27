@@ -1,0 +1,7 @@
+is_attachment( int|string|array|object $attachment = '' )
+the_attachment_link( int|WP_Post $id, bool $fullsize = false, bool $deprecated = false, bool $permalink = false )
+get_attachment_link( int|object $post = null, bool $leavename = false )
+wp_attachment_is_image( int|WP_Post $post = null )
+wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false, string|array $attr = '' )
+wp_get_attachment_metadata( int $post_id, bool $unfiltered = false )
+wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false )

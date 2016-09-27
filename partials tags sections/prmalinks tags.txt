@@ -1,0 +1,7 @@
+the_permalink()
+get_permalink( int|WP_Post $post, bool $leavename = false )
+post_permalink( int|WP_Post $post_id )
+permalink_anchor( string $mode = 'id' )
+get_post_permalink( int $id, bool $leavename = false, bool $sample = false )
+permalink_single_rss( string $deprecated = '' )
+the_permalink_rss()

@@ -1,0 +1,6 @@
+get_footer( string $name = null )
+get_header( string $name = null )
+get_sidebar( string $name = null )
+get_search_form( bool $echo = true )
+get_template_part( string $slug, string $name = null )
+comments_template( string $file = '/comments.php', bool $separate_comments = false )

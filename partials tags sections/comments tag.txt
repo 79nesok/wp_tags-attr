@@ -1,0 +1,36 @@
+get_avatar( $id_or_email, $size, $default, $alt, $args );
+comment_ID();
+comment_text( $comment_ID );
+comment_type('comment', 'trackback', 'pingback');
+comment_time( $d );
+comment_date( $d, $comment_ID );
+comment_form( $args, $post_id ); 
+comment_class( $class, $comment_id, $post_id, $echo );
+comments_link();
+comment_author( $comment_ID );
+comment_excerpt( $comment_ID );
+comment_text_rss();
+wp_list_comments( $args, $comments );
+comments_rss_link( string $link_text = 'Comments RSS' );
+post_comments_feed_link( string $link_text = '', int $post_id = '', string $feed = '' );
+comment_id_fields( $id );
+comments_number( $zero, $one, $more );
+comment_author_IP($comment_ID);
+comment_form_title( $noreplytext, $replytext, $linktoparent );
+comment_reply_link( $args, $comment, $post );
+next_comments_link( $label, $max_page );
+comment_author_url( $comment_ID );
+comment_author_rss();
+comment_author_link( $comment_ID );
+comment_author_email( $comment_ID );
+previous_comments_rss();
+previous_comments_link( $label );
+comment_author_url_link('linktext', 'before', 'after');
+paginate_comments_links( $args );
+cancel_comment_reply_link( $text );
+comment_author_email_link('linktext', 'before', 'after');
+
+
+
+
+

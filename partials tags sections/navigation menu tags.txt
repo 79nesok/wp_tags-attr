@@ -1,0 +1,4 @@
+wp_nav_menu()
+wp_get_nav_menus( array $args = array() )
+walk_nav_menu_tree( array $items, int $depth, object $r )
+wp_get_nav_menu_items( string $menu, array $args = array() )

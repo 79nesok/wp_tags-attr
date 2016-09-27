@@ -1,0 +1,45 @@
+the_ID();
+the_tags( $before, $sep, $after );
+the_title( $before, $after, $echo );
+the_time( $d );
+the_date( $format, $before, $after, $echo );
+the_meta();
+post_class();
+body_class( string|array $class = '' )
+sticky_class( int $post_id = null )
+the_excerpt()
+the_content( string $more_link_text = null, bool $strip_teaser = false )
+the_title_rss() 
+the_category( $separator, $parents, $post_id ); 
+get_the_date( $format, $post_id );
+the_shortlink( $text, $title, $before, $after );
+the_date_xml();
+is_attachment();
+wp_link_pages();
+posts_nav_link( $sep, $prelabel, $nextlabel );
+next_post_link( $format, $link, $in_same_term = false, $excluded_terms = '', $taxonomy = 'category' );
+next_posts_link( $label , $max_pages );
+the_excerpt_rss()
+the_content( string $more_link_text = null, bool $strip_teaser = false )
+next_image_link( string|array $size = 'thumbnail', string $text = false )
+single_post_title( string $prefix = '', bool $display = true )
+the_category_rss( string $type = null )
+wp_get_shortlink( int $id, string $context = 'post', bool $allow_slugs = true )
+the_search_query()
+the_title_attribute( string|array $args = '' )
+previous_post_link( string $format = '&laquo; %link', string $link = '%title', bool $in_same_term = false, array|string $excluded_terms = '', string $taxonomy = 'category' )
+single_month_title( string $prefix = '', bool $display = true )
+the_modified_date( string $d = '', string $before = '', string $after = '', bool $echo = true )
+the_modified_time( string $d = '' )
+previous_posts_link( string $label = null )
+get_attachment_link( int|object $post = null, bool $leavename = false )
+the_attachment_link( int|WP_Post $id, bool $fullsize = false, bool $deprecated = false, bool $permalink = false )
+previous_image_link( string|array $size = 'thumbnail', string $text = false )
+the_excerpt()
+the_modified_author()
+post_password_required( int|WP_Post|null $post = null )
+wp_get_attachment_link( int|WP_Post $id, string|array $size = 'thumbnail', bool $permalink = false, bool $icon = false, string|false $text = false, array|string $attr = '' )
+wp_attachment_is_image( int|WP_Post $post = null )
+wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false, string|array $attr = '' )
+wp_get_attachment_metadata( int $post_id, bool $unfiltered = false )
+wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false )

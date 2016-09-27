@@ -1,0 +1,337 @@
+COOMENT TAGS
+
+get_avatar( $id_or_email, $size, $default, $alt, $args );
+comment_ID();
+comment_text( $comment_ID );
+comment_type('comment', 'trackback', 'pingback');
+comment_time( $d );
+comment_date( $d, $comment_ID );
+comment_form( $args, $post_id ); 
+comment_class( $class, $comment_id, $post_id, $echo );
+comments_link();
+comment_author( $comment_ID );
+comment_excerpt( $comment_ID );
+comment_text_rss();
+wp_list_comments( $args, $comments );
+comments_rss_link( string $link_text = 'Comments RSS' );
+post_comments_feed_link( string $link_text = '', int $post_id = '', string $feed = '' );
+comment_id_fields( $id );
+comments_number( $zero, $one, $more );
+comment_author_IP($comment_ID);
+comment_form_title( $noreplytext, $replytext, $linktoparent );
+comment_reply_link( $args, $comment, $post );
+next_comments_link( $label, $max_page );
+comment_author_url( $comment_ID );
+comment_author_rss();
+comment_author_link( $comment_ID );
+comment_author_email( $comment_ID );
+previous_comments_rss();
+previous_comments_link( $label );
+comment_author_url_link('linktext', 'before', 'after');
+paginate_comments_links( $args );
+cancel_comment_reply_link( $text );
+comment_author_email_link('linktext', 'before', 'after');
+
+POST TAGS
+
+the_ID();
+the_tags( $before, $sep, $after );
+the_title( $before, $after, $echo );
+the_time( $d );
+the_date( $format, $before, $after, $echo );
+the_meta();
+post_class();
+body_class( string|array $class = '' )
+sticky_class( int $post_id = null )
+the_excerpt()
+the_content( string $more_link_text = null, bool $strip_teaser = false )
+the_title_rss() 
+the_category( $separator, $parents, $post_id ); 
+get_the_date( $format, $post_id );
+the_shortlink( $text, $title, $before, $after );
+the_date_xml();
+is_attachment();
+wp_link_pages();
+posts_nav_link( $sep, $prelabel, $nextlabel );
+next_post_link( $format, $link, $in_same_term = false, $excluded_terms = '', $taxonomy = 'category' );
+next_posts_link( $label , $max_pages );
+the_excerpt_rss()
+the_content( string $more_link_text = null, bool $strip_teaser = false )
+next_image_link( string|array $size = 'thumbnail', string $text = false )
+single_post_title( string $prefix = '', bool $display = true )
+the_category_rss( string $type = null )
+wp_get_shortlink( int $id, string $context = 'post', bool $allow_slugs = true )
+the_search_query()
+the_title_attribute( string|array $args = '' )
+previous_post_link( string $format = '&laquo; %link', string $link = '%title', bool $in_same_term = false, array|string $excluded_terms = '', string $taxonomy = 'category' )
+single_month_title( string $prefix = '', bool $display = true )
+the_modified_date( string $d = '', string $before = '', string $after = '', bool $echo = true )
+the_modified_time( string $d = '' )
+previous_posts_link( string $label = null )
+get_attachment_link( int|object $post = null, bool $leavename = false )
+the_attachment_link( int|WP_Post $id, bool $fullsize = false, bool $deprecated = false, bool $permalink = false )
+previous_image_link( string|array $size = 'thumbnail', string $text = false )
+the_excerpt()
+the_modified_author()
+post_password_required( int|WP_Post|null $post = null )
+wp_get_attachment_link( int|WP_Post $id, string|array $size = 'thumbnail', bool $permalink = false, bool $icon = false, string|false $text = false, array|string $attr = '' )
+wp_attachment_is_image( int|WP_Post $post = null )
+wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false, string|array $attr = '' )
+wp_get_attachment_metadata( int $post_id, bool $unfiltered = false )
+wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false )
+
+
+
+NAVIGATION MENU TAGS
+
+wp_nav_menu()
+wp_get_nav_menus( array $args = array() )
+walk_nav_menu_tree( array $items, int $depth, object $r )
+wp_get_nav_menu_items( string $menu, array $args = array() )
+
+
+
+
+SHOORTCUT FUNCTIONS
+
+do_shortcode( string $content, bool $ignore_html = false )
+add_shortcode( string $tag, callable $func )
+shortcode_atts( array $pairs, array $atts, string $shortcode = '' )
+strip_shortcodes( string $content )
+remove_shortcode( string $tag )
+remove_all_shortcodes()
+
+
+
+EDIT LINKS
+
+edit_tag_link( string $link = '', string $before = '', string $after = '', WP_Term $tag = null )
+edit_post_link( string $text = null, string $before = '', string $after = '', int $id, string $class = 'post-edit-link' )
+edit_comment_link( string $text = null, string $before = '', string $after = '' )
+edit_bookmark_link( string $link = '', string $before = '', string $after = '', int $bookmark = null )
+
+
+
+
+LIST $ DROPODOWN TAGS
+
+wp_page_menu( array|string $args = array() )
+wp_list_pages( array|string $args = '' )
+wp_get_archives( string|array $args = '' )
+wp_list_authors( string|array $args = '' )
+wp_list_comments( string|array $args = array(), array $comments = null )
+wp_dropdown_pages( array|string $args = '' )
+wp_list_bookmarks( string|array $args = '' )
+wp_dropdown_users( array|string $args = '' )
+wp_list_categories( string|array $args = '' )
+wp_dropdown_categories( string|array $args = '' )
+
+
+LOGIN/LOGOUT TAGS
+
+wp_logout()
+wp_register( string $before = '<li>', string $after = '</li>', bool $echo = true )
+wp_loginout( string $redirect = '', bool $echo = true )
+wp_login_url( string $redirect = '', bool $force_reauth = false )
+wp_logout_url( string $redirect = '' )
+wp_login_form( array $args = array() )
+is_user_logged_in()
+wp_lostpassword_url( string $redirect = '' )
+wp_registration_url()
+
+
+LINKS MANAGER
+
+get_bookmark( int|stdClass $bookmark, string $output = OBJECT, string $filter = 'raw' )
+get_bookmarks( string|array $args = '' )
+wp_list_bookmarks( string|array $args = '' )
+get_bookmark_field( string $field, int $bookmark, string $context = 'display' )
+
+
+
+SHORTLINK TAGS
+
+the_shortlink( string $text = '', string $title = '', string $before = '', string $after = '' )
+wp_get_shortlink( int $id, string $context = 'post', bool $allow_slugs = true )
+wp_shortlink_header()
+wp_shortlink_wp_head()
+
+
+
+TITLE TAGS
+
+wp_title( string $sep = '&raquo;', bool $display = true, string $seplocation = '' )
+single_cat_title( string $prefix = '', bool $display = true )
+single_tag_title( string $prefix = '', bool $display = true )
+single_post_title( string $prefix = '', bool $display = true )
+the_search_query()
+single_month_title( string $prefix = '', bool $display = true )
+
+
+
+PERMALINKS TAGS
+
+the_permalink()
+get_permalink( int|WP_Post $post, bool $leavename = false )
+post_permalink( int|WP_Post $post_id )
+permalink_anchor( string $mode = 'id' )
+get_post_permalink( int $id, bool $leavename = false, bool $sample = false )
+permalink_single_rss( string $deprecated = '' )
+the_permalink_rss()
+
+
+AUTHOR TAGS
+
+the_author( string $deprecated = '', string $deprecated_echo = true )
+get_the_author( string $deprecated = '' )
+wp_list_authors( string|array $args = '' )
+the_author_link()
+the_author_meta( string $field = '', int $user_id = false )
+the_author_posts()
+get_the_author_link()
+wp_dropdown_users( array|string $args = '' )
+get_author_posts_url( int $author_id, string $author_nicename = '' )
+the_author_posts_link( string $deprecated = '' )
+
+
+
+PLUGIN API FUNCTIONS
+
+has_filter( string $tag, callable|bool $function_to_check = false )
+add_filter( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )
+apply_filters( string $tag, mixed $value )
+current_filter()
+merge_filters();
+remove_filters();
+remove_all_filters( string $tag, int|bool $priority = false )
+do_action( string $tag,  $arg = '' )
+did_action( string $tag )
+has_action( string $tag, callable|bool $function_to_check = false )
+add_action( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )
+remove_action( string $tag, callable $function_to_remove, int $priority = 10 )
+remove_all_actions( string $tag, int|bool $priority = false )
+do_action_ref_array( string $tag, array $args )
+
+
+POST THUMBNAIL TAGS
+
+has_post_thumbnail( int|WP_Post $post = null )
+the_post_thumbnail( string|array $size = 'post-thumbnail', string|array $attr = '' )
+get_post_thumbnail_id( int|WP_Post $post = null )
+get_the_post_thumbnail( int|WP_Post $post = null, string|array $size = 'post-thumbnail', string|array $attr = '' )
+
+CONDITIONAL TAGS
+
+is_tag( mixed $tag = '' )
+is_tax( string|array $taxonomy = '', int|string|array $term = '' )
+is_day()
+is_404()
+is_date()
+is_time()
+is_year()
+is_feed( string|array $feeds = '' )
+has_tag( string|int|array $tag = '', int|object $post = null )
+is_page( int|string|array $page = '' )
+is_home()
+is_admin()
+is_paged()
+is_single( int|string|array $post = '' )
+is_sticky( int $post_id )
+is_mouth()
+is_search()
+is_author( mixed $author = '' )
+is_archive()
+is_preview()
+is_singular( string|array $post_types = '' )
+is_category( mixed $category = '' )
+is_trackback()
+is_front_page()
+is_attachment( int|string|array|object $attachment = '' )
+comments_open( int|WP_Post $post_id = null )
+is_page_template( string|array $template = '' )
+is_comments_popup()
+
+
+
+QUERY TAGS
+
+get_posts( array $args = null )
+query_posts( array|string $query )
+rewind_posts()
+wp_reset_query()
+
+
+
+
+INCLUDE TAGS
+
+get_footer( string $name = null )
+get_header( string $name = null )
+get_sidebar( string $name = null )
+get_search_form( bool $echo = true )
+get_template_part( string $slug, string $name = null )
+comments_template( string $file = '/comments.php', bool $separate_comments = false )
+
+
+TAG TAGS
+
+the_tags( string $before = null, string $sep = ', ', string $after = '' )
+wp_tag_cloud( array|string|null $args = '' )
+tag_description( int $tag )
+single_tag_title( string $prefix = '', bool $display = true )
+wp_generate_tag_cloud( array $tags, string|array $args = '' )
+
+
+
+DATE $ TIME TAGS
+
+the_time( string $d = '' )
+the_date( string $d = '', string $before = '', string $after = '', bool $echo = true )
+get_calendar( bool $initial = true, bool $echo = true )
+get_the_date( string $d = '', int|WP_Post $post = null )
+the_date_xml()
+the_modified_date( string $d = '', string $before = '', string $after = '', bool $echo = true )
+the_modified_time( string $d = '' )
+single_month_title( string $prefix = '', bool $display = true )
+the_modified_author()
+
+
+ATTACHEMENT TAGS
+
+is_attachment( int|string|array|object $attachment = '' )
+the_attachment_link( int|WP_Post $id, bool $fullsize = false, bool $deprecated = false, bool $permalink = false )
+get_attachment_link( int|object $post = null, bool $leavename = false )
+wp_attachment_is_image( int|WP_Post $post = null )
+wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false, string|array $attr = '' )
+wp_get_attachment_metadata( int $post_id, bool $unfiltered = false )
+wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail', bool $icon = false )
+
+
+
+CATEGORY TAGS
+
+the_category( string $separator = '', string $parents = '', int $post_id = false )
+single_cat_title( string $prefix = '', bool $display = true )
+the_category_rss( string $type = null )
+wp_list_categories( string|array $args = '' )
+category_description( int $category )
+wp_dropdown_categories( string|array $args = '' )
+
+
+
+BLOG INFO TAGS
+
+bloginfo( string $show = '' )
+bloginfo_rss( string $show = '' )
+get_bloginfo( string $show = '', string $filter = 'raw' )
+get_bloginfo_rss( string $show = '' )
+
+
+
+
+
+
+
+
+
+

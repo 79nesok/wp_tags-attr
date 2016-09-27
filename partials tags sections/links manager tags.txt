@@ -1,0 +1,4 @@
+get_bookmark( int|stdClass $bookmark, string $output = OBJECT, string $filter = 'raw' )
+get_bookmarks( string|array $args = '' )
+wp_list_bookmarks( string|array $args = '' )
+get_bookmark_field( string $field, int $bookmark, string $context = 'display' )

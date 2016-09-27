@@ -1,0 +1,4 @@
+has_post_thumbnail( int|WP_Post $post = null )
+the_post_thumbnail( string|array $size = 'post-thumbnail', string|array $attr = '' )
+get_post_thumbnail_id( int|WP_Post $post = null )
+get_the_post_thumbnail( int|WP_Post $post = null, string|array $size = 'post-thumbnail', string|array $attr = '' )

@@ -1,0 +1,4 @@
+edit_tag_link( string $link = '', string $before = '', string $after = '', WP_Term $tag = null )
+edit_post_link( string $text = null, string $before = '', string $after = '', int $id, string $class = 'post-edit-link' )
+edit_comment_link( string $text = null, string $before = '', string $after = '' )
+edit_bookmark_link( string $link = '', string $before = '', string $after = '', int $bookmark = null )

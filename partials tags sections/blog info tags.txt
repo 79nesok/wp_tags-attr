@@ -1,0 +1,4 @@
+bloginfo( string $show = '' )
+bloginfo_rss( string $show = '' )
+get_bloginfo( string $show = '', string $filter = 'raw' )
+get_bloginfo_rss( string $show = '' )

@@ -1,0 +1,6 @@
+wp_title( string $sep = '&raquo;', bool $display = true, string $seplocation = '' )
+single_cat_title( string $prefix = '', bool $display = true )
+single_tag_title( string $prefix = '', bool $display = true )
+single_post_title( string $prefix = '', bool $display = true )
+the_search_query()
+single_month_title( string $prefix = '', bool $display = true )

@@ -1,0 +1,6 @@
+the_tags( string $before = null, string $sep = ', ', string $after = '' )
+wp_tag_cloud( array|string|null $args = '' )
+tag_description( int $tag )
+single_tag_title( string $prefix = '', bool $display = true )
+wp_generate_tag_cloud( array $tags, string|array $args = '' )
+

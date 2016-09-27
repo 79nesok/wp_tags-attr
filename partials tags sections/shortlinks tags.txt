@@ -1,0 +1,4 @@
+the_shortlink( string $text = '', string $title = '', string $before = '', string $after = '' )
+wp_get_shortlink( int $id, string $context = 'post', bool $allow_slugs = true )
+wp_shortlink_header()
+wp_shortlink_wp_head()

@@ -1,0 +1,6 @@
+do_shortcode( string $content, bool $ignore_html = false )
+add_shortcode( string $tag, callable $func )
+shortcode_atts( array $pairs, array $atts, string $shortcode = '' )
+strip_shortcodes( string $content )
+remove_shortcode( string $tag )
+remove_all_shortcodes()

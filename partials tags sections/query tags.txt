@@ -1,0 +1,4 @@
+get_posts( array $args = null )
+query_posts( array|string $query )
+rewind_posts()
+wp_reset_query()
